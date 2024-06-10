@@ -1,0 +1,153 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* .title {
+  text-align: center;
+  color: #ffa500;
+}
+.background {
+  background-color: #bf40bf;
+}
+.App {
+  background-color: #5f9ea0;
+} */
+
+/* App.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #bf40bf;
+}
+.title {
+  text-align: center;
+  color: #ffa500;
+  font-size: 75px;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: lightblue;
+  background-image: linear-gradient(#bf40bf, #5f9ea0);
+}
+
+.uploaded-files-list {
+  margin-top: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+
+.fileItem {
+  margin-bottom: 20px;
+}
+
+.formStyle {
+  padding: 20px;
+  border: 5px solid rgb(243, 160, 232);
+  width: 600px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.form-control {
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: no-color;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #b8d7f9;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(192, 223, 255, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+/*Link Colour*/
+a:link {
+  color: rgb(255, 203, 203);
+}
+/*Link visited colour*/
+a:visited {
+  color: rgb(202, 255, 202);
+}
+/*Link hover colour*/
+a:hover {
+  color: rgb(255, 231, 243);
+  font-size: 22px;
+}
+/*Link active colour*/
+a:active {
+  color: rgb(207, 207, 255);
+}
