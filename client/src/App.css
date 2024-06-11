@@ -1,0 +1,196 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#e3b0e3, #b2e8ea);
+}
+
+.form-container {
+  width: 1000px;
+}
+.title,
+.slogan {
+  text-align: center;
+}
+.btn {
+  width: 100%;
+}
+.auth-image {
+  width: 100%;
+  border-radius: 8px;
+}
+.alert {
+  margin-bottom: 1.5rem;
+}
+.profile-card {
+  width: 500px;
+}
+.avatar {
+  margin-bottom: 1.5rem;
+}
+.username {
+  text-transform: capitalize;
+}
+.profile-btn {
+  margin-top: 1.3rem;
+  width: 100%;
+}
+
+/* PDF Viewer CSS */
+
+/* body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #bf40bf;
+} */
+.titlePdf {
+  text-align: center;
+  color: #ffa500;
+  font-size: 75px;
+}
+.AppPdf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 1535px;
+  background-color: lightblue;
+  background-image: linear-gradient(#bf40bf, #5f9ea0);
+}
+
+.uploaded-files-list {
+  margin-top: 100px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-primaryPdf {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.btn-primaryPdf:hover {
+  background-color: #0056b3;
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+
+.fileItem {
+  margin-bottom: 20px;
+}
+
+.formStyle {
+  padding: 20px;
+  border: 5px solid rgb(243, 160, 232);
+  width: 1000px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 100px;
+}
+
+.form-control {
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: no-color;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #b8d7f9;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(192, 223, 255, 0.25);
+}
+
+a {
+  text-decoration: none;
+}
+/*Link Colour*/
+a:link {
+  color: rgb(255, 203, 203);
+}
+/*Link visited colour*/
+a:visited {
+  color: rgb(202, 255, 202);
+}
+/*Link hover colour*/
+a:hover {
+  color: rgb(255, 231, 243);
+  font-size: 22px;
+}
+/*Link active colour*/
+a:active {
+  color: rgb(207, 207, 255);
+}
