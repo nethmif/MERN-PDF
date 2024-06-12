@@ -50,13 +50,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(#e3b0e3, #b2e8ea);
-}
+  scroll-behavior: smooth;
+  background-image: linear-gradient(#adc8f2, #adc8f2);
+} */
 
 .form-container {
   width: 1000px;
@@ -90,33 +91,47 @@ body {
 }
 
 /* PDF Viewer CSS */
-
-/* body,
-html {
-  margin: 0;
+/* Ensuring html and body take full height and allow scrolling */
+html,
+body {
+  padding-top: 100px;
   padding: 0;
   height: 100%;
-  background-color: #bf40bf;
-} */
+  overflow: auto;
+}
+
+body {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(#adc8f2, #adc8f2);
+}
+
 .titlePdf {
   text-align: center;
   color: #ffa500;
   font-size: 75px;
+  margin-bottom: 20px;
 }
+
 .AppPdf {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 1000vh; */
   width: 1535px;
   background-color: lightblue;
-  background-image: linear-gradient(#bf40bf, #5f9ea0);
+  /* background-image: linear-gradient(#bf40bf, #5f9ea0); */
 }
 
 .uploaded-files-list {
-  margin-top: 100px;
+  margin-top: 20px;
   font-size: 20px;
   text-align: center;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .btn-primaryPdf {
@@ -142,18 +157,18 @@ html {
   gap: 300px;
 }
 
-.fileItem {
+/* .fileItem {
   margin-bottom: 20px;
-}
+} */
 
-.formStyle {
+/* .formStyle {
   padding: 20px;
   border: 5px solid rgb(243, 160, 232);
   width: 1000px;
   text-align: center;
   padding-bottom: 40px;
   margin-top: 100px;
-}
+} */
 
 .form-control {
   display: inline-block;
@@ -193,4 +208,43 @@ a:hover {
 /*Link active colour*/
 a:active {
   color: rgb(207, 207, 255);
+}
+.pdf-container {
+  height: 700px;
+  width: 750px;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.btnView {
+  width: 150px;
+  height: 50px;
+  font-size: larger;
+  margin-top: 30px;
+  color: #ffffff;
+  background-color: #09753b;
+  border-color: #09753b;
+  border-radius: 1.2rem;
+}
+
+/* .formStyle {
+  align-content: center;
+} */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  flex: 1; /* Allow the container to grow and take up available space */
+  overflow-y: auto; /* Allow vertical scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fileItem {
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
 }
