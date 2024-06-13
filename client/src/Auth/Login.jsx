@@ -62,7 +62,6 @@ const Login = () => {
                 className="btn"
               >
                 {loading ? <Spin /> : "Sign In"}
-                {/* Sign In */}
               </Button>
             </Form.Item>
             <Form.Item>

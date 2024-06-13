@@ -82,7 +82,6 @@ const Register = () => {
                 className="btn"
               >
                 {loading ? <Spin /> : "Create Account"}
-                {/* Create Account */}
               </Button>
             </Form.Item>
             <Form.Item>
