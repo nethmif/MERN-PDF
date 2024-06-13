@@ -1,7 +1,7 @@
-**Backend 
+# Backend 
 First direct the path to the backend server and run 
-**nodemon index.js
+**nodemon index.js**
 
-**Frontend
+# Frontend
 First direct the path to the frontend client and run 
-**npm start
+**npm start**
