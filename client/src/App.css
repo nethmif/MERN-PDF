@@ -106,14 +106,14 @@ body {
   flex-direction: column;
   align-items: center;
   scroll-behavior: smooth;
-  background-image: linear-gradient(#adc8f2, #adc8f2);
+  background-image: linear-gradient(#c7e2ff, #c7e2ff);
 }
 
 .titlePdf {
   text-align: center;
   color: #ffa500;
   font-size: 75px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .AppPdf {
@@ -122,12 +122,12 @@ body {
   align-items: center;
   /* min-height: 1000vh; */
   width: 1535px;
-  background-color: lightblue;
+  background-color: #c7e2ff;
   /* background-image: linear-gradient(#bf40bf, #5f9ea0); */
 }
 
 .uploaded-files-list {
-  margin-top: 20px;
+  margin-top: 75px;
   font-size: 20px;
   text-align: center;
   max-height: 200px;
@@ -172,6 +172,8 @@ body {
 
 .form-control {
   display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 10px;
   width: auto;
   padding: 10px;
   font-size: 16px;
@@ -210,22 +212,24 @@ a:active {
   color: rgb(207, 207, 255);
 }
 .pdf-container {
-  height: 700px;
+  height: 750px;
   width: 750px;
-  overflow: auto;
+  overflow-x: hidden;
   margin-top: 20px;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .btnView {
-  width: 150px;
-  height: 50px;
-  font-size: larger;
-  margin-top: 30px;
+  width: 170px;
+  height: 60px;
+  font-size: 20px;
+  margin-top: 90px;
+  margin-left: 20px;
   color: #ffffff;
   background-color: #09753b;
   border-color: #09753b;
   border-radius: 1.2rem;
+  float: right;
 }
 
 /* .formStyle {
@@ -233,7 +237,7 @@ a:active {
 } */
 .container {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   padding: 20px;
   flex: 1; /* Allow the container to grow and take up available space */
   overflow-y: auto; /* Allow vertical scrolling */
@@ -245,6 +249,20 @@ a:active {
 .fileItem {
   margin-bottom: 20px;
   cursor: pointer;
-  color: blue;
-  text-decoration: underline;
+  color: rgb(9, 9, 139);
+  /* text-decoration: underline; */
+}
+.fileNameBtn {
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.formRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fileNameBtn:hover {
+  font-size: 25px;
 }

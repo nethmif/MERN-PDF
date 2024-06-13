@@ -256,7 +256,7 @@ function PdfViewer() {
     handleFileEvent(e);
     handleImage(e);
     handleChange(e);
-    handleDownload(e.target.files[0]);
+    // handleDownload(e.target.files[0]);
   };
 
   const handleChange = (e) => {
@@ -274,6 +274,9 @@ function PdfViewer() {
     } else {
       console.log("Please select");
     }
+  };
+  const handlePdfLinkClick = (file) => {
+    setViewPdf(URL.createObjectURL(file));
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -299,36 +302,40 @@ function PdfViewer() {
     <div className="container">
       <form onSubmit={handleSubmit}>
         <h2 className="titlePdf">View PDF</h2>
-        <input
-          type="file"
-          accept="application/pdf"
-          onChange={handleFileInputChange}
-          className="form-control"
-        />
-        <button
-          type="submit"
-          // className="btn btn-success"
-          className="btnView"
-          // onClick={handleUpload}
-        >
-          View PDF
-        </button>
+        <div className="formRow">
+          <input
+            type="file"
+            accept="application/pdf"
+            onChange={handleFileInputChange}
+            className="form-control"
+          />
+          <button
+            type="submit"
+            // className="btn btn-success"
+            className="btnView"
+            // onClick={handleUpload}
+          >
+            View PDF
+          </button>
+        </div>
+        <div className="uploaded-files-list">
+          {uploadedFiles.map((file) => (
+            <div key={file.name} className="fileItem">
+              <button
+                type="submit"
+                className="fileNameBtn"
+                // href="#"
+                // onClick={(e) => {
+                //   // e.preventDefault();
+                // }}
+                onClick={() => handlePdfLinkClick(file)}
+              >
+                {file.name}
+              </button>
+            </div>
+          ))}
+        </div>
       </form>
-      <div className="uploaded-files-list">
-        {uploadedFiles.map((file) => (
-          <div key={file.name} className="fileItem">
-            <p
-              href="#"
-              onClick={(e) => {
-                // e.preventDefault();
-              }}
-            >
-              {file.name}
-            </p>
-          </div>
-        ))}
-      </div>
-
       <div className="pdf-container">
         {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js"> */}
         <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
